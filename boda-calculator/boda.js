@@ -1,29 +1,27 @@
-// const baseFare=50;
-// let kilometer
-// File: fare.js
 
-function calculateBodaFare(distanceInKm) {
-  const baseFare = 50; // KES
-  const chargePerKm = 15; // KES
+const readline = require('readline');
+const baseFare=50;
+const chargePerKm=15;
 
-  // Calculate total fare
+function calculateBodaFare(distanceInKm){
   const totalFare = baseFare + (distanceInKm * chargePerKm);
+  const chargeInKm=distanceInKm*chargePerKm;
 
-  // Output the results
-  console.log(`Uko kwote? Io ni ${distanceInKm} km:`);
-  console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
-  console.log(`Mpaka Uko: KES ${baseFare + (distanceInKm * chargePerKm)}`);
-  console.log(`Total: KES ${totalFare}`);
-  console.log('\nPanda Pikipiki!');
+  console.log("Uko kwote? Io nikm:"+" "+distanceInKm);
+  console.log("Ukikalia Pikipiki: KES"+" "+baseFare);
+  console.log("Mpaka Uko: KES"+" "+chargeInKm);
+  console.log("Total: KES"+" "+totalFare);
+  console.log("Panda Pikipiki!");
 }
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+rl.question("Unafika wapi Mkubwa? Kilometer ngapi?: ", (input) => {
+    const distanceInKm = parseFloat(input);
+    calculateBodaFare(distanceInKm);
+  rl.close();
+});
 
-// Prompt user for input
-const userInput = prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
-const distanceInKm = parseFloat(userInput);
 
-// Validate input and call the function
-if (!isNaN(distanceInKm) && distanceInKm > 0) {
-  calculateBodaFare(distanceInKm);
-} else {
-  console.log("Please enter a valid distance.");
-}
+
