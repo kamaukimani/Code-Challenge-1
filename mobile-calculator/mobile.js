@@ -5,16 +5,16 @@ const transactionFee=0.015;
 
 function estimateTransactionFee(amountToSend) {
     
-    let interest=amount*transactionFee;
+    let interest=amountToSend*transactionFee;
     if(interest<10) {
         interest=minAmount;
     }else
     if(interest>70){
         interest=maxAmount
     }
-    const totalAmount=amount+interest;
+    const totalAmount=amountToSend+interest;
 
-    console.log("Sending :KES"+ " "+amount);
+    console.log("Sending :KES"+ " "+amountToSend);
     console.log("Calculated Transaction fee:"+" "+interest);
     console.log("Total amount to be debited:KES"+" "+totalAmount);
 
