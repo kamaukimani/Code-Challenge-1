@@ -12,12 +12,12 @@ function calculateChaiIngredients(numberOfCups) {
     const sugar=sugarCup *numberOfCups;
 
 
-console.log("To make"+" "+numberOfCups+" "+ "cups of Kenyan chai, you will need:");
-console.log("Water:"+water+" "+"ml");
-console.log("Milk:"+milk+" "+"ml");
-console.log("Teal Leaves (Majani):"+tealeaves+" "+"tablespoons");
-console.log("Sugar:"+sugar+" "+"teaspoons")
-console.log("Enjoy your Chai Bora!")
+    console.log("To make"+" "+numberOfCups+" "+ "cups of Kenyan chai, you will need:");
+    console.log("Water:"+water+" "+"ml");
+    console.log("Milk:"+milk+" "+"ml");
+    console.log("Teal Leaves (Majani):"+tealeaves+" "+"tablespoons");
+    console.log("Sugar:"+sugar+" "+"teaspoons")
+    console.log("Enjoy your Chai Bora!")
 }
 
 const rl = readline.createInterface({
