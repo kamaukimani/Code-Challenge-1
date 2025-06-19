@@ -2,6 +2,11 @@
 
 This repository contains three JavaScript files that perform calculations for real-life Kenyan use cases: making chai, estimating boda boda fare, and calculating mobile money transaction fees. Each script uses Node.js with `readline` for user input and demonstrates basic arithmetic operations and conditional logic.
 
+## Author & License
+Author & License
+1. **Author: Paul**
+2. **License: MIT**
+
 ## Project Setup
 
 To run the scripts in this project:
@@ -9,10 +14,7 @@ To run the scripts in this project:
 1. **Install Node.js**  
    Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-2. ## Author & License
-Author & License
-1. **Author: Paul**
-2. **License: MIT**
+
 
 ##
 3. **Clone the repository**
